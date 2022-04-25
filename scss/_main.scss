@@ -187,6 +187,27 @@ nav {
         width: 100%;
         border-radius: 5px;
     }
+    a{
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: box-shadow .2s linear;
+        &:hover{
+            box-shadow: 0 0 20px  rgba(#26FFF2, .5);
+
+            img{
+                transform: scale(1.1);
+            }
+        }
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+            transition: transform .8s linear;
+            
+        }
+    }
 
     .vid-list .flex-div {
         align-items: flex-start;
